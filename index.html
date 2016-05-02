@@ -19,7 +19,7 @@
         <input type="Text" class="from-control" name="bday" placeholder="Name" ng-model="product.name" required>
 
         <input type="Text" class="from-control" name="bday" placeholder="desc" ng-model="product.desc" required>
-        <input type="Text" class="from-control" name="bday" placeholder="price" ng-model="product.price" required>
+        <input type="number" class="from-control" name="bday" placeholder="price" ng-model="product.price" required>
         <input type="Text" class="from-control" name="bday" placeholder="category" ng-model="product.category" required>
         <input type="Text" class="from-control" name="bday" placeholder="image" ng-model="product.image" required>
         <button type="button" class="btn btn-primary btn-sm" ng-click= "addproduct()"> Add product</button>
@@ -50,7 +50,7 @@
               <td>{{productdetails.desc}}</td>
               <td>{{productdetails.price}}</td>
               <td>{{productdetails.category}}</td>
-              <td>{{productdetails.image}}</td>
+              <td><img src="{{productdetails.image}}" alt="" height="60" width="60"></td>
               <td>
                 <button type="button" class="btn btn-primary btn-sm" ng-click = editExpense(expense) >
                 <span class="glyphicon glyphicon-edit"></span></button>
