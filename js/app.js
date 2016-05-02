@@ -46,4 +46,22 @@ var $index = $scope.input.indexOf(productdetails);
 };
 
 
-})
+});
+
+app.config(function($stateProvider, $urlRouterProvider) {
+
+  $stateProvider
+    .state('home', {
+      url: '/',
+      templateUrl: '/html/home.html ',
+      // controller: 'homeCtrl'
+    })
+    .state('detailpage', {
+      url: '/detailpage',
+      templateUrl: '/html/detailpage.html',
+    })
+
+
+
+  // $urlRouterProvider.otherwise('/');
+});
